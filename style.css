@@ -1,0 +1,1426 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 10px silver ;
+    background-color: rgb(250, 250, 250);
+    z-index: 3;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 60%;
+    margin-right: 2%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    height: 100%;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+}
+
+nav li a:hover {
+    color: #FFA35A;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1400px;
+    width: 100%;
+    height: 934px;
+    margin-top: 160px;
+    background-color: #FFA35A;
+    background-image: url(assets/Etretat.webp);
+    background-position: top;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 40px 150px 0 0;
+}
+
+span.titre {
+    display: block;
+    padding-left: 130px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 60px 20px 0 0;
+}
+
+.accueilIcons {
+    margin: 150px 10px 0 0;
+}
+
+.accueilIcons i {
+    font-size: 70px;
+    padding: 10px;
+    margin: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+    transition: 0.4s;
+}
+
+.fa-file:hover {
+    font-size: 80px;
+    margin: 20px 25px 20px 20px;
+}
+
+.fa-linkedin-in:hover {
+    font-size: 80px;
+    margin: 20px 25px 20px 26px;
+}
+
+.fa-github:hover {
+    font-size: 80px;
+    margin: 20px 25px 20px 25px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    max-width: 980px;
+    margin-bottom: 100px;
+    padding-top: 150px;
+}
+
+h3 {
+    margin: 0;
+    position: absolute;
+    color: #FFA35A;
+    font-size: 40px;
+    z-index: 2;
+}
+
+#presentation h3 {
+    top: 1285px;
+}
+
+#competences h3 {
+    top: 1965px;
+}
+
+#projets h3 {
+    top: 3345px;
+}
+
+h4 {
+    margin: 0;
+    color: silver;
+    font-size: 100px;
+    opacity: 40%;
+}
+
+#presentation p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#presentation a {
+    color: black;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+#competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: grey;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.competencesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.competencesBox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 90%;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    border-bottom: rgb(80, 80, 80) solid 2px;
+    transition: 0.3s;
+}
+
+.competencesBox article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 29%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(115, 115, 115);
+    box-shadow: 1px 1px 10px rgb(80, 80, 80);
+    transition: 0.5s;
+}
+
+.competencesBox article:hover h5 {
+    font-size: 35px;
+    padding: 0 10px 4px 10px;
+}
+
+.competencesBox article:hover {
+    box-shadow: 1px 1px 15px rgb(40, 40, 40);
+}
+
+.articleImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.competencesUnique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+    margin: 15px 0;
+    padding: 5px 0;
+    transition: ease 0.3s;
+}
+
+.competencesBox article img {
+    width: 100%;
+    height: 100%;
+}
+
+.competencesUnique:hover {
+    height: 80px;
+    padding-bottom: 25px;
+}
+
+.competencesUnique span {
+    font-size: 15px;
+    margin-top: 5px;
+    visibility: hidden;
+    transition: 0.1s;
+    text-align: center;
+    width: 100%;
+}
+ 
+.competencesUnique img:hover + span {
+    visibility: visible;
+}
+
+.progress {
+    background-color: rgba(255, 164, 90, 0.4);
+    border-radius: 10% / 30%;
+}
+
+.competencesMore {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.nextContainer {
+    display: flex;
+    align-items: center;
+    width: 37.8px;
+    height: 33px;
+    background-color: rgba(255, 164, 90, 0.4);
+    border-radius: 10% / 30%;
+    margin-left: 40px;
+}
+
+.nextContainer p {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.competencesMore a {
+    display: block;
+    background-image: url(assets/Competences.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 700px;
+    height: 350px;
+    margin-top: 40px;
+    margin-right: 40px;
+    box-shadow: 15px 15px 20px rgb(210, 210, 210, 0.6)
+}
+
+.competencesHover {
+    display: none;
+    background-color: #FFA35A;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.competencesMore a:hover {
+    box-shadow: 15px 15px 20px rgba(255, 156, 75, 0.4)
+}
+
+.competencesMore a:hover .competencesHover {
+    display: flex;
+}
+
+.seeMore {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    margin-bottom: 100px;
+}
+
+.textHover {
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.seeMore p {
+    margin: 0;
+}
+
+.seeMore i {
+    margin-left: 10px;
+}
+
+.competencesMore a:hover .textHover {
+    animation-name: slideDownText;
+    animation-duration: 1s;
+    margin-bottom: 0;
+}
+
+.competencesMore a:hover .seeMore {
+    animation-name: slideDownArrow;
+    animation-duration: 1s;
+    margin-bottom: 30px;
+}
+
+@keyframes slideDownText {
+    from {
+        opacity: 0;
+        margin-bottom: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes slideDownArrow {
+    from {
+        opacity: 0;
+        margin-bottom: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 30px;
+    }
+}
+
+#projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.projetsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projetsContainer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 40% 2%;
+    height: 450px;
+    width: 35%;
+    margin-top: 100px;
+    transition: 1s;
+    border: 1px solid grey ;
+    text-decoration: none;
+}
+
+.projetsContainer a:hover {
+    border-radius: 2% 40%;
+}
+
+.booki {
+    background-image: url(assets/projets/Booki.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.sophie {
+    background-image: url(assets/projets/Sophie.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.nina {
+    background-image: url(assets/projets/Nina.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.kasa {
+    background-image: url(assets/projets/Kasa.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.grimoire {
+    background-image: url(assets/projets/Grimoire.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.projetsContainer a p {
+    width: 55%;
+    padding: 10px;
+    margin: 0 0 10px 10px;
+    border-radius: 20% 3%;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.projetsContainer a:hover p {
+    margin-left: 120px;
+    border-radius: 3% 20%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h6 {
+    margin: 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contactIcons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.contactIcons i {
+    font-size: 50px;
+}
+
+
+/** -- Pages Projets -- **/
+
+.arrow {
+    margin-left: 60px;
+}
+
+.head a i {
+    font-size: 50px;
+    padding: 20px;
+    color: black;
+}
+
+.pageProjet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.pageProjet h3 {
+    position: static;
+    font-size: 60px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.imageContainer img {
+    width: 110%;
+}
+
+.pageProjet a {
+    text-decoration: none;
+}
+
+.pageProjet span {
+    position: relative;
+    bottom: 20px;
+    color: white;
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: black;
+}
+
+.pageProjet span i {
+    margin-left: 10px;
+}
+
+.listTech {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px 25px 0 0;
+    padding: 0;
+}
+
+.listTech li {
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    background-color: white;
+    cursor: default;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.listTech li:hover {
+    border: 2px solid grey;
+    padding: 9px 19px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.listObj {
+    width: 94%;
+    padding: 0;
+    margin: 0;
+}
+
+.listObj p {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.listObj li {
+    margin: 0 0 30px 120px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+/** Responsive **/
+
+@media (max-width: 1349px) {
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .accueilIcons i {
+        font-size: 60px;
+    }
+
+    .fa-file:hover {
+        font-size: 70px;
+    }
+    
+    .fa-linkedin-in:hover {
+        font-size: 70px;
+    }
+    
+    .fa-github:hover {
+        font-size: 70px;
+        margin: 20px 25px 20px 25.3px;
+    }
+}
+
+@media (max-width: 1279px) {
+    #accueil {
+        height: 670px;
+    }
+
+    h1 {
+        font-size: 80px;
+        margin-right: 90px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .accueilIcons {
+        margin-top: 100px;
+    }
+
+    .accueilIcons i {
+        font-size: 45px;
+    }
+
+    .fa-file:hover {
+        font-size: 55px;
+    }
+    
+    .fa-linkedin-in:hover {
+        font-size: 55px;
+    }
+    
+    .fa-github:hover {
+        font-size: 55px;
+    }
+
+    #presentation h3 {
+        top: 1021px;
+    }
+
+    #competences h3 {
+        top: 1701px;
+    }
+
+    #projets h3 {
+        top: 3081px;
+    }
+
+    .projetsContainer a {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1172px) {
+    .accueilIcons {
+        margin-top: 50px;
+    }
+
+    #competences h3 {
+        top: 1736px;
+    }
+
+    #projets h3  {
+        top: 3116px;
+    }
+}
+
+@media (max-width: 1159px) {
+    #accueil {
+        margin-top: 140px;
+    }
+
+    .accueilIcons {
+        margin-right: 0;
+    }
+
+    .competencesBox article {
+        width: 27%;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .competencesBox article:hover h5 {
+        font-size: 30px;
+        padding-bottom: 3px;
+    }
+
+    .competencesUnique {
+        height: 85px;
+    }
+
+    .competencesUnique:hover {
+        height: 65px;
+    }
+
+    .competencesUnique span {
+        font-size: 13px;
+    }
+
+    .projetsContainer a {
+        height: 350px;
+        margin-top: 80px;
+    }
+
+    #presentation h3 {
+        top: 1001px;
+    }
+
+    #competences h3 {
+        top: 1721px;
+    }
+
+    #projets h3 {
+        top: 3041px;
+    }
+}
+
+@media (max-width: 1054px) {
+    .logo {
+        width: 8%;
+    }
+
+    nav li a {
+        font-size: 20px;
+    }
+
+    #accueil {
+        margin-top: 100px;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-right: 110px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .accueilIcons {
+        margin-top: 130px;
+        margin-right: 20px;
+    }
+
+    .accueilIcons i {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    .fa-file:hover {
+        font-size: 50px;
+        margin: 10px 15px 10px 10px;
+    }
+    
+    .fa-linkedin-in:hover {
+        font-size: 50px;
+        margin: 10px 15px 10px 16px;
+    }
+    
+    .fa-github:hover {
+        font-size: 50px;
+        margin: 10px 15px 10px 15.3px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    #presentation h3 {
+        top: 836px;
+    }
+
+    #competences h3 {
+        top: 1391px;
+    }
+
+    #projets h3 {
+        top: 2551px;
+    }
+
+    h4 {
+        font-size: 80px;
+    }
+
+    #presentation {
+        padding-top: 100px;
+    }
+
+    #presentation p {
+        font-size: 20px;
+    }
+
+    #competences {
+        padding-top: 100px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .competencesBox article:hover h5 {
+        font-size: 25px;
+    }
+
+    .competencesUnique {
+        height: 75px;
+    }
+
+    .competencesUnique:hover {
+        height: 55px;
+    }
+
+    .competencesUnique span {
+        font-size: 12px;
+    }
+
+    .nextContainer p {
+        font-size: 17px;
+    }
+
+    .competencesMore a {
+        height: 300px;
+        width: 600px;
+        box-shadow: 10px 10px 15px rgba(210, 210, 210, 0.6);
+    }
+
+    .competencesMore a:hover {
+        box-shadow: 10px 10px 15px rgba(255, 156, 75, 0.4)
+    }
+
+    .competencesHover {
+        font-size: 20px;
+    }
+
+    .seeMore {
+        font-size: 17px;
+    }
+
+    #projets {
+        padding-top: 100px;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    .contactIcons a {
+        margin-left: 32px;
+    }
+
+    .contactIcons i {
+        font-size: 40px;
+    }
+
+    .contactIcons p {
+        font-size: 14px;
+    }
+
+    .pageProjet {
+        margin-top: 90px;
+    }
+
+    .head a i {
+        font-size: 40px;
+    }
+
+    .pageProjet h3 {
+        font-size: 45px;
+    }
+
+    .listTech {
+        font-size: 16px;
+    }
+
+    .pageProjet span {
+        font-size: 20px;
+        bottom: 15px;
+    }
+
+    .listObj p {
+        font-size: 30px;
+    }
+
+    .listObj li {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 937px) {
+    h1 {
+        margin-right: 80px;
+    }
+
+    h2 {
+        margin-right: 10px;
+    }
+
+    .accueilIcons {
+        margin-top: 60px;
+        margin-right: 0;
+    }
+
+    #competences h3 {
+        top: 1418px;
+    }
+
+    #projets h3 {
+        top: 2578px;
+    }
+}
+
+@media (max-width: 842px) {
+    h1 {
+        margin-right: 60px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        width: 30%;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .accueilIcons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 30%;
+        margin: 20px 20px 0 0;
+    }
+
+    .fa-file:hover {
+        margin-right: 17.5px;
+        margin-left: 15px;
+    }
+
+    .competencesContainer {
+        width: 100%;
+    }
+
+    .competencesBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competencesBox article {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .competencesUnique {
+        height: 85px;
+    }
+
+    .competencesUnique:hover {
+        height: 85px;
+        padding-bottom: 5px;
+    }
+
+    .competencesUnique span {
+        display: none;
+    }
+
+    .competencesMore a {
+        width: 500px;
+        height: 250px;
+        margin-top: 60px;
+    }
+
+    .projetsContainer a {
+        width: 40%;
+    }
+
+    #competences h3  {
+        top: 1445px;
+    }
+
+    #projets h3 {
+        top: 3363px;
+    }
+}
+
+@media (max-width: 766px) {
+    nav {
+        width: 75%;
+    }
+
+    #accueil {
+        margin-top: 80px;
+    }
+
+    h1 {
+        margin-right: 50px;
+    }
+
+    .accueilIcons {
+        margin-right: 10px;
+    }
+
+    .fa-linkedin-in:hover {
+        margin-left: 16.5px;
+    }
+
+    #presentation {
+        padding-top: 80px;
+    }
+
+    #presentation h3 {
+        top: 786px;
+    }
+
+    #competences {
+       padding-top: 80px;
+    }
+
+    #competences h3 {
+        top: 1383px;
+    }
+
+    #projets {
+        padding-top: 80px;
+    }
+
+    #projets h3 {
+        top: 3259px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 65px;
+    }
+
+    .projetsContainer a {
+        width: 60%;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .arrow {
+        margin-left: 20px;
+    }
+
+    .listObj p {
+        font-size: 25px;
+    }
+
+    .listObj li {
+        font-size: 17px;
+        margin-left: 80px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 639px) {
+    #accueil {
+        height: 425px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-top: 10px;
+        margin-right: 60px;
+    }
+    span.titre {
+        padding-left: 100px;
+    }
+
+    h2 {
+        margin-right: 0;
+    }
+
+    .accueilIcons {
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 110px;
+    }
+
+    .accueilIcons i {
+        box-shadow: 1px 1px 100px white;
+    }
+
+    h3 {
+        position: static;
+    }
+
+    h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 559px) {
+    nav {
+        width: 80%;
+    }
+
+    nav li a {
+        font-size: 15px;
+    }
+
+    #accueil {
+        margin-top: 60px;
+        
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-right: 150px;
+    }
+
+    span.titre {
+        padding-left: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .accueilIcons {
+        margin-top: 135px;
+    }
+
+    .accueilIcons i {
+        font-size: 30px;
+    }
+
+    .fa-file:hover {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .fa-github:hover {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .fa-linkedin-in:hover {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #presentation {
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    #presentation p {
+        font-size: 15px;
+    }
+
+    #competences {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .competencesBox article:hover h5 {
+        font-size: 20px;
+    }
+
+    .competencesUnique {
+        height: 65px;
+    }
+
+    .competencesUnique:hover {
+        height: 65px;
+    }
+
+    .competencesMore {
+        margin: 0;
+    }
+
+    .competencesMore p {
+        font-size: 15px;
+    }
+
+    .competencesMore a {
+        height: 200px;
+        width: 400px;
+    }
+
+    #projets {
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .projetsContainer a {
+        height: 300px;
+        width: 65%;
+    }
+
+    .projetsContainer p {
+        font-size: 12px;
+    }
+
+    #contact {
+        margin-top: 60px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .contactIcons {
+        margin-top: 40px;
+    }
+
+    .contactIcons a {
+        margin-left: 42px;
+    }
+
+    .contactIcons i {
+        font-size: 30px;
+    }
+
+    .contactIcons p {
+        font-size: 12px;
+    }
+
+    .pageProjet {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .arrow {
+        margin-left: 10px;
+    }
+
+    .head a i {
+        font-size: 30px;
+    }
+
+    .pageProjet h3 {
+        font-size: 30px;
+    }
+
+    .listTech {
+        font-size: 13px;
+    }
+
+    .listTech li {
+        padding: 8px 16px;
+        margin-left: 15px;
+    }
+
+    .listTech li:hover {
+        padding: 7px 15px;
+    }
+
+    .pageProjet span {
+        font-size: 15px;
+        padding: 8px 12px;
+        bottom: 13px;
+    }
+
+    .listObj p {
+        font-size: 20px;
+    }
+
+    .listObj li {
+        font-size: 15px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 424px) {
+    nav {
+        width: 85%;
+    }
+
+    nav li a {
+        font-size: 13px;
+    }
+
+    h1 {
+        margin-right: 130px; 
+        margin-top: 20px;  
+    }
+    
+    h2 {
+        display: none;
+    }
+
+    .accueilIcons {
+        flex-direction: column;
+        align-items: flex-end;
+        margin: -45px 0 0 0;
+    }
+
+    .accueilIcons i {
+        box-shadow: none;
+        margin: 15px;
+    }
+
+    .fa-file:hover {
+        margin: 15px;
+    }
+
+    .fa-github:hover {
+        margin: 15px;
+    }
+
+    .fa-linkedin-in:hover {
+        margin: 15px;
+    }
+
+    .competencesBox article {
+        width: 75%;
+    }
+
+    .competencesMore a {
+        height: 100px;
+    }
+
+    .competencesMore a:hover {
+        box-shadow: 10px 10px 15px rgba(210, 210, 210, 0.6);
+    }
+
+    .competencesMore a:hover .competencesHover {
+        display: none;
+    }
+
+    .projetsContainer a {
+        width: 80%;
+    }
+
+    #contact {
+        width: auto;
+    }
+
+    .contactIcons {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contactIcons a {
+        margin: 30px 0 0 0;
+    }
+}
